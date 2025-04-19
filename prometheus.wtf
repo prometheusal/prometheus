@@ -22,7 +22,7 @@ LoaderTab:AddButton({
     Title = "Load Prometheus (MESSY CONSOLE)",
     Description = "Loads the main version of Prometheus.",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/prometheusal/prometheus/refs/heads/main/prometheus.wtf"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/prometheusal/prometheus/refs/heads/main/prometheus"))()
         destroyGUI()
     end
 })
