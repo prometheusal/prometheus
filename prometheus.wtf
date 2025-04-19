@@ -36,6 +36,12 @@ LoaderTab:AddButton({
     end
 })
 
+LoaderTab:AddParagraph({
+    Title = "CHANGELOGS",
+    Content = "04/19/2025 \nAdded config system."
+})
+
+Window:SelectTab(LoaderTab)
 
 LoaderTab:AddParagraph({
     Title = "PLEASE READ.",
