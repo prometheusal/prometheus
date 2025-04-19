@@ -35,3 +35,9 @@ LoaderTab:AddButton({
         destroyGUI()
     end
 })
+
+
+LoaderTab:AddParagraph({
+    Title = "PLEASE READ.",
+    Content = "CAUTION!\nBETA version only works for good executors. If you're getting a callback error, proceed to use the main version."
+})
