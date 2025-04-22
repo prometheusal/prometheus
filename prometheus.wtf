@@ -37,7 +37,7 @@ LoaderTab:AddButton({
 })
 
 LoaderTab:AddButton({
-    Title = "Load neverlose.cc v4.0 (ONLY USE WITH PAID EXECUTORS) (CLEAN CONSOLE)",
+    Title = "Load neverlose.cc v4.0 (PAID EXECUTORS) (CLEAN CONSOLE)",
     Description = "Loads the 4.0 version of neverlose.cc",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/prometheusal/prometheus/refs/heads/main/neverlose"))()
