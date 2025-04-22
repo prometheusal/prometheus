@@ -2,11 +2,11 @@ local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/
 
 local Window = Fluent:CreateWindow({
     Title = "Loader",
-    SubTitle = "by spartan",
+    SubTitle = "by darth †",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
     Acrylic = true,
-    Theme = "Dark"
+    Theme = "Amethyst"
 })
 
 local LoaderTab = Window:AddTab({ 
@@ -19,8 +19,8 @@ local function destroyGUI()
 end
 
 LoaderTab:AddButton({
-    Title = "Load Prometheus (MESSY CONSOLE)",
-    Description = "Loads the main version of Prometheus.",
+    Title = "Load neverlose.cc v2.0 (MESSY CONSOLE)",
+    Description = "Loads the 2.0 version of neverlose.cc",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/prometheusal/prometheus/refs/heads/main/prometheus"))()
         destroyGUI()
@@ -28,8 +28,8 @@ LoaderTab:AddButton({
 })
 
 LoaderTab:AddButton({
-    Title = "Load Prometheus BETA (CLEAN CONSOLE)",
-    Description = "Loads the beta version of Prometheus.",
+    Title = "Load neverlose.cc v3.0 (CLEAN CONSOLE)",
+    Description = "Loads the 3.0 version of neverlose.cc",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/prometheusal/prometheus/refs/heads/main/prometheusBETA.wtf"))()
         destroyGUI()
@@ -38,7 +38,7 @@ LoaderTab:AddButton({
 
 LoaderTab:AddParagraph({
     Title = "CHANGELOGS",
-    Content = "04/19/2025 \nAdded config system."
+    Content = "04/22/2025 \nSwapped out icons, switched to a different new theme."
 })
 
 Window:SelectTab(LoaderTab)
