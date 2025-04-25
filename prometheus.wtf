@@ -47,7 +47,7 @@ LoaderTab:AddButton({
 
 LoaderTab:AddParagraph({
     Title = "CHANGELOGS",
-    Content = "04/25/2025 \nAdded new react methods."
+    Content = "04/25/2025\nAdded new react methods."
 })
 
 Window:SelectTab(LoaderTab)
