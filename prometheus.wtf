@@ -47,14 +47,14 @@ LoaderTab:AddButton({
 
 LoaderTab:AddParagraph({
     Title = "CHANGELOGS",
-    Content = "04/22/2025 \nSwapped out icons, switched to a different new theme."
+    Content = "04/25/2025 \nAdded new react methods."
 })
 
 Window:SelectTab(LoaderTab)
 
 LoaderTab:AddParagraph({
     Title = "PLEASE READ.",
-    Content = "CAUTION!\n3.0 version only works for good executors. If you're getting callback error, proceed to use the 2.0 version."
+    Content = "CAUTION!\n3.0 and 4.0 versions only work for good executors. If you're getting "callback error", proceed to use the 2.0 version."
 })
 
 Window:SelectTab(LoaderTab)
