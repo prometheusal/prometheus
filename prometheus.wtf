@@ -1,61 +1,30 @@
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+warn = function() end
+print = function() end
+error = function() end
 
-local Window = Fluent:CreateWindow({
-    Title = "Fluent " .. Fluent.Version,
-    SubTitle = "by dawid",
-    TabWidth = 160,
-    Size = UDim2.fromOffset(580, 460),
-    Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
-    Theme = "Dark",
-    MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
-})
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/cerberus.lua"))()
 
-local LoaderTab = Window:AddTab({ 
-    Title = "Loader", 
-    Icon = "" 
-})
+local window = Library.new("Loader")
+window:LockScreenBoundaries(true)
 
-local function destroyGUI()
-    Window:Destroy()
-end
+local tab = window:Tab("Loader")
 
-LoaderTab:AddButton({
-    Title = "Load neverlose.cc v2.0 (MESSY CONSOLE)",
-    Description = "Loads the 2.0 version of neverlose.cc",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/prometheusal/prometheus/refs/heads/main/prometheus"))()
-        destroyGUI()
-    end
-})
+local section = tab:Section("Main")
 
-LoaderTab:AddButton({
-    Title = "Load neverlose.cc v3.0 (CLEAN CONSOLE)",
-    Description = "Loads the 3.0 version of neverlose.cc",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/prometheusal/prometheus/refs/heads/main/prometheusBETA.wtf"))()
-        destroyGUI()
-    end
-})
+section:Title("Loader by darth や")
 
-LoaderTab:AddButton({
-    Title = "Load neverlose.cc v4.0 (PAID EXECUTORS) (CLEAN CONSOLE)",
-    Description = "Loads the 4.0 version of neverlose.cc",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/prometheusal/prometheus/refs/heads/main/neverlose"))()
-        destroyGUI()
-    end
-})
+section:Label("CHANGELOGS\n04/25/2025\nAdded new react methods.")
 
-LoaderTab:AddParagraph({
-    Title = "CHANGELOGS",
-    Content = "04/25/2025\nAdded new react methods."
-})
+section:Label("PLEASE READ.\nCAUTION!\n3.0 and 4.0 versions only work for good executors. If you're getting callback error, proceed to use the 2.0 version.")
 
-Window:SelectTab(LoaderTab)
+section:Button("Load neverlose.cc v2.0 (MESSY CONSOLE)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/prometheusal/prometheus/refs/heads/main/prometheus"))()
+end)
 
-LoaderTab:AddParagraph({
-    Title = "PLEASE READ.",
-    Content = "CAUTION!\n3.0 and 4.0 versions only work for good executors. If you're getting callback error, proceed to use the 2.0 version."
-})
+section:Button("Load neverlose.cc v3.0 (CLEAN CONSOLE)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/prometheusal/prometheus/refs/heads/main/prometheusBETA.wtf"))()
+end)
 
-Window:SelectTab(LoaderTab)
+section:Button("Load neverlose.cc v4.0 (PAID EXECUTORS) (C.C)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/prometheusal/prometheus/refs/heads/main/neverlose"))()
+end)
