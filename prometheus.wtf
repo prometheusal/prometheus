@@ -13,18 +13,14 @@ local section = tab:Section("Main")
 
 section:Title("Loader by darth や")
 
-section:Label("CHANGELOGS\n04/25/2025\nAdded new react methods.")
+section:Label("CHANGELOGS\n04/30/2025\nBypassed new anti-cheat. (SizeCheck)")
 
-section:Label("PLEASE READ.\nCAUTION!\n3.0 and 4.0 versions only work for good executors. If you're getting callback error, proceed to use the 2.0 version.")
+section:Label("PLEASE READ.\nCAUTION!\n3.0 and 4.0 versions only work for good executors. If you're getting callback error, then your executor isn't compatible with neverlose.")
 
-section:Button("Load neverlose.cc v2.0 (MESSY CONSOLE)", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/prometheusal/prometheus/refs/heads/main/prometheus"))()
-end)
-
-section:Button("Load neverlose.cc v3.0 (CLEAN CONSOLE)", function()
+section:Button("Load neverlose.cc v3.0", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/prometheusal/prometheus/refs/heads/main/prometheusBETA.wtf"))()
 end)
 
-section:Button("Load neverlose.cc v4.0 (PAID EXECUTORS) (C.C)", function()
+section:Button("Load neverlose.cc v4.0 (PAID EXECUTORS)", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/prometheusal/prometheus/refs/heads/main/neverlose"))()
 end)
