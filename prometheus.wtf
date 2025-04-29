@@ -15,7 +15,7 @@ section:Title("Loader by darth や")
 
 section:Label("CHANGELOGS\n04/30/2025\nBypassed new anti-cheat. (SizeCheck)")
 
-section:Label("PLEASE READ.\nCAUTION!\n3.0 and 4.0 versions only work for good executors. If you're getting callback error, then your executor isn't compatible with neverlose.")
+section:Label("PLEASE READ.\nCAUTION!\nneverlose.cc only works for good executors. If you're getting callback error, then your executor isn't compatible with neverlose.")
 
 section:Button("Load neverlose.cc v5.0", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/prometheusal/prometheus/refs/heads/main/neverlose"))()
