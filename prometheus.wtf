@@ -1,0 +1,44 @@
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+
+local Window = Fluent:CreateWindow({
+    Title = "neverlose.cc loader interface",
+    SubTitle = "by darth",
+    TabWidth = 160,
+    Size = UDim2.fromOffset(580, 460),
+    Acrylic = false,
+    Theme = "Amethyst",
+    MinimizeKey = Enum.KeyCode.P 
+})
+
+local LoaderTab = Window:AddTab({ 
+    Title = "Loader", 
+    Icon = "" 
+})
+
+local function destroyGUI()
+    Window:Destroy()
+end
+
+
+LoaderTab:AddButton({
+    Title = "Load neverlose.cc 5.0",
+    Description = "Loads the 5.0 version of neverlose.cc",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/prometheusal/prometheus/refs/heads/main/neverlose"))()
+        destroyGUI()
+    end
+})
+
+LoaderTab:AddParagraph({
+    Title = "CHANGELOGS",
+    Content = "05/17/2025 \nSwapped out to a different loader."
+})
+
+Window:SelectTab(LoaderTab)
+
+LoaderTab:AddParagraph({
+    Title = "PLEASE READ.",
+    Content = "CAUTION!\n5.0 version only works for good executors. If you're getting callback error, then your executor isn't compatible with neverlose."
+})
+
+Window:SelectTab(LoaderTab)
